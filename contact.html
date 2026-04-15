@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — CodeMatrix</title>
+  <meta name="description" content="Get in touch with CodeMatrix. Whether you have a project idea, a question, or just want to say hello — we'd love to hear from you." />
+  <meta name="keywords" content="contact CodeMatrix, hire developers, tech project inquiry, software quote" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body class="page-inner">
+
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <span class="loader-logo">CM</span>
+      <div class="loader-bar"><div class="loader-progress"></div></div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-bracket">[</span>Code<span class="logo-accent">Matrix</span><span class="logo-bracket">]</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        <li><a href="privacy.html" class="nav-link">Privacy</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-primary nav-cta">Get Started</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero page-hero-sm">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="container page-hero-content" data-animate="fade-up">
+      <span class="section-label">Reach Out</span>
+      <h1 class="page-hero-title">Let's Start a<br /><span class="text-gradient">Conversation</span></h1>
+      <p class="page-hero-sub">We respond to every inquiry within 24 hours. Usually much faster.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact-section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Contact Info -->
+        <div class="contact-info" data-animate="fade-right">
+          <h3>Get in Touch</h3>
+          <p>Whether you have a project, a question, or just want to explore what's possible — we're here for it.</p>
+
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="ci-icon">📧</div>
+              <div>
+                <strong>Email Us</strong>
+                <a href="mailto:hello@codematrix.io">hello@codematrix.io</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="ci-icon">📞</div>
+              <div>
+                <strong>Call Us</strong>
+                <a href="tel:+11234567890">+1 (123) 456-7890</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="ci-icon">📍</div>
+              <div>
+                <strong>Visit Us</strong>
+                <span>548 Market St, San Francisco, CA 94104</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="ci-icon">⏰</div>
+              <div>
+                <strong>Working Hours</strong>
+                <span>Mon – Fri, 9:00 AM – 6:00 PM PST</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Map Placeholder -->
+          <div class="map-placeholder">
+            <div class="map-inner">
+              <div class="map-pin">📍</div>
+              <p>CodeMatrix HQ</p>
+              <small>548 Market St, San Francisco, CA</small>
+            </div>
+            <div class="map-grid-bg"></div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrap" data-animate="fade-left">
+          <div class="form-card">
+            <h3>Send Us a Message</h3>
+            <p class="form-sub">Tell us about your project. We'll get back to you with a tailored response.</p>
+            <form class="contact-form" id="contactForm" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstName">First Name</label>
+                  <input type="text" id="firstName" name="firstName" placeholder="James" required />
+                  <span class="form-error" id="firstNameError"></span>
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Last Name</label>
+                  <input type="text" id="lastName" name="lastName" placeholder="Dalton" required />
+                  <span class="form-error" id="lastNameError"></span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="james@company.com" required />
+                <span class="form-error" id="emailError"></span>
+              </div>
+              <div class="form-group">
+                <label for="company">Company (optional)</label>
+                <input type="text" id="company" name="company" placeholder="Your Company Inc." />
+              </div>
+              <div class="form-group">
+                <label for="service">Service Interest</label>
+                <select id="service" name="service">
+                  <option value="" disabled selected>Select a service...</option>
+                  <option value="web">Web Development</option>
+                  <option value="app">App Development</option>
+                  <option value="ai">AI Agents & Chatbots</option>
+                  <option value="cloud">Cloud Infrastructure</option>
+                  <option value="backend">Backend Engineering</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell us about your project, goals, timeline, and any other relevant details..." required></textarea>
+                <span class="form-error" id="messageError"></span>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full btn-lg" id="submitBtn">
+                <span class="btn-text">Send Message</span>
+                <span class="btn-loader" style="display:none;">Sending...</span>
+              </button>
+              <div class="form-success" id="formSuccess" style="display:none;">
+                <span>✅</span>
+                <p>Message sent! We'll be in touch within 24 hours.</p>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <span class="logo-bracket">[</span>Code<span class="logo-accent">Matrix</span><span class="logo-bracket">]</span>
+          </a>
+          <p>Engineering digital excellence since 2012.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-link">𝕏</a>
+            <a href="#" class="social-link">in</a>
+            <a href="#" class="social-link">⌥</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="services.html">Web Development</a></li>
+            <li><a href="services.html">App Development</a></li>
+            <li><a href="services.html">AI & Chatbots</a></li>
+            <li><a href="services.html">Cloud Solutions</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <ul>
+            <li><a href="mailto:hello@codematrix.io">hello@codematrix.io</a></li>
+            <li><a href="tel:+11234567890">+1 (123) 456-7890</a></li>
+            <li><span>San Francisco, CA</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 CodeMatrix. All rights reserved.</p>
+        <p>Crafted with precision by the CodeMatrix team.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

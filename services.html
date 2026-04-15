@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services — CodeMatrix</title>
+  <meta name="description" content="Explore CodeMatrix's full range of tech services: web development, mobile apps, AI agents, chatbots, cloud, backend, frontend, and database solutions." />
+  <meta name="keywords" content="web development services, AI chatbot, app development, cloud solutions, backend engineering" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body class="page-inner">
+
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <span class="loader-logo">CM</span>
+      <div class="loader-bar"><div class="loader-progress"></div></div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-bracket">[</span>Code<span class="logo-accent">Matrix</span><span class="logo-bracket">]</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="services.html" class="nav-link active">Services</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="privacy.html" class="nav-link">Privacy</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-primary nav-cta">Get Started</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="container page-hero-content" data-animate="fade-up">
+      <span class="section-label">What We Do</span>
+      <h1 class="page-hero-title">Full-Spectrum<br /><span class="text-gradient">Tech Services</span></h1>
+      <p class="page-hero-sub">Eight core disciplines. One unified team. Infinite possibilities for your product.</p>
+    </div>
+  </section>
+
+  <!-- Services Detail Grid -->
+  <section class="section services-full">
+    <div class="container">
+      <div class="services-full-grid" data-animate="stagger">
+
+        <!-- Web Development -->
+        <div class="svc-card">
+          <div class="svc-header">
+            <div class="svc-icon-wrap">🌐</div>
+            <div class="svc-badge">Core Service</div>
+          </div>
+          <h3>Web Development</h3>
+          <p>We architect and build high-performance web applications using React, Next.js, Vue, and modern full-stack patterns. Our web solutions are designed for speed, accessibility, and conversion — whether it's a landing page, SaaS dashboard, or enterprise portal.</p>
+          <ul class="svc-list">
+            <li>Custom web applications & SaaS platforms</li>
+            <li>Progressive Web Apps (PWA)</li>
+            <li>E-commerce & marketplace platforms</li>
+            <li>CMS integration (Contentful, Sanity, Strapi)</li>
+            <li>Performance optimization & Core Web Vitals</li>
+          </ul>
+          <div class="svc-footer">
+            <span class="svc-tech">React</span>
+            <span class="svc-tech">Next.js</span>
+            <span class="svc-tech">TypeScript</span>
+            <a href="contact.html" class="btn btn-outline btn-sm">Start Project</a>
+          </div>
+        </div>
+
+        <!-- App Development -->
+        <div class="svc-card">
+          <div class="svc-header">
+            <div class="svc-icon-wrap">📱</div>
+            <div class="svc-badge">Popular</div>
+          </div>
+          <h3>App Development</h3>
+          <p>Cross-platform mobile applications that feel native on both iOS and Android. We build consumer apps, enterprise tools, and marketplace platforms — all optimized for performance and user retention.</p>
+          <ul class="svc-list">
+            <li>React Native & Flutter development</li>
+            <li>iOS (Swift) & Android (Kotlin) native apps</li>
+            <li>App Store & Play Store deployment</li>
+            <li>Push notifications & real-time features</li>
+            <li>App maintenance & iterative updates</li>
+          </ul>
+          <div class="svc-footer">
+            <span class="svc-tech">React Native</span>
+            <span class="svc-tech">Flutter</span>
+            <span class="svc-tech">Swift</span>
+            <a href="contact.html" class="btn btn-outline btn-sm">Start Project</a>
+          </div>
+        </div>
+
+        <!-- Frontend -->
+        <div class="svc-card">
+          <div class="svc-header">
+            <div class="svc-icon-wrap">🎨</div>
+          </div>
+          <h3>Frontend Engineering</h3>
+          <p>Pixel-perfect, accessible, and blazing-fast frontend interfaces. We translate design systems into production-grade component libraries and SPAs that delight users at every interaction.</p>
+          <ul class="svc-list">
+            <li>Design system implementation</li>
+            <li>Component library development (Storybook)</li>
+            <li>Animation & micro-interaction engineering</li>
+            <li>Accessibility (WCAG 2.1 AA compliance)</li>
+            <li>Performance audits & Lighthouse optimization</li>
+          </ul>
+          <div class="svc-footer">
+            <span class="svc-tech">React</span>
+            <span class="svc-tech">Framer Motion</span>
+            <span class="svc-tech">Storybook</span>
+            <a href="contact.html" class="btn btn-outline btn-sm">Start Project</a>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="svc-card">
+          <div class="svc-header">
+            <div class="svc-icon-wrap">⚙️</div>
+          </div>
+          <h3>Backend Engineering</h3>
+          <p>Robust, scalable, and secure backend systems built for production. From RESTful APIs to event-driven microservices, we design backend architectures that handle millions of requests without breaking a sweat.</p>
+          <ul class="svc-list">
+            <li>RESTful & GraphQL API development</li>
+            <li>Microservices & event-driven architecture</li>
+            <li>Authentication, authorization & security</li>
+            <li>Background jobs, queues & schedulers</li>
+            <li>API documentation & developer portals</li>
+          </ul>
+          <div class="svc-footer">
+            <span class="svc-tech">Node.js</span>
+            <span class="svc-tech">Go</span>
+            <span class="svc-tech">Python</span>
+            <a href="contact.html" class="btn btn-outline btn-sm">Start Project</a>
+          </div>
+        </div>
+
+        <!-- Database -->
+        <div class="svc-card">
+          <div class="svc-header">
+            <div class="svc-icon-wrap">🗄️</div>
+          </div>
+          <h3>Database Design</h3>
+          <p>We design, optimize, and manage database architectures that are fast, reliable, and cost-efficient. From OLTP to OLAP, from relational to document stores — we choose and implement the right data layer for your workload.</p>
+          <ul class="svc-list">
+            <li>Schema design & data modeling</li>
+            <li>Query optimization & indexing strategies</li>
+            <li>Database migration & version management</li>
+            <li>Replication, sharding & high availability</li>
+            <li>Analytics pipelines & data warehousing</li>
+          </ul>
+          <div class="svc-footer">
+            <span class="svc-tech">PostgreSQL</span>
+            <span class="svc-tech">MongoDB</span>
+            <span class="svc-tech">Redis</span>
+            <a href="contact.html" class="btn btn-outline btn-sm">Start Project</a>
+          </div>
+        </div>
+
+        <!-- Cloud -->
+        <div class="svc-card">
+          <div class="svc-header">
+            <div class="svc-icon-wrap">☁️</div>
+            <div class="svc-badge">Enterprise</div>
+          </div>
+          <h3>Cloud Infrastructure</h3>
+          <p>We architect, deploy, and manage cloud infrastructure on AWS, GCP, and Azure. Our DevOps engineers bring enterprise-grade reliability, observability, and cost optimization to every deployment.</p>
+          <ul class="svc-list">
+            <li>Cloud architecture design & migration</li>
+            <li>CI/CD pipeline setup (GitHub Actions, GitLab)</li>
+            <li>Container orchestration with Kubernetes</li>
+            <li>Monitoring, alerting & incident response</li>
+            <li>Cost optimization & FinOps consulting</li>
+          </ul>
+          <div class="svc-footer">
+            <span class="svc-tech">AWS</span>
+            <span class="svc-tech">Kubernetes</span>
+            <span class="svc-tech">Terraform</span>
+            <a href="contact.html" class="btn btn-outline btn-sm">Start Project</a>
+          </div>
+        </div>
+
+        <!-- AI Agents -->
+        <div class="svc-card svc-featured-card">
+          <div class="svc-header">
+            <div class="svc-icon-wrap">🤖</div>
+            <div class="svc-badge svc-badge-hot">🔥 Hot</div>
+          </div>
+          <h3>AI Agents</h3>
+          <p>Autonomous AI agents that reason, plan, and execute complex workflows without human intervention. We build production-grade agentic systems using the latest LLMs, RAG architectures, and tool-use frameworks that actually ship to production.</p>
+          <ul class="svc-list">
+            <li>Custom GPT & Claude-powered agents</li>
+            <li>RAG systems with vector databases</li>
+            <li>Multi-agent orchestration pipelines</li>
+            <li>Tool-use & function calling integrations</li>
+            <li>Agent monitoring & evaluation frameworks</li>
+          </ul>
+          <div class="svc-footer">
+            <span class="svc-tech">LangChain</span>
+            <span class="svc-tech">OpenAI</span>
+            <span class="svc-tech">Pinecone</span>
+            <a href="contact.html" class="btn btn-primary btn-sm">Start Project</a>
+          </div>
+        </div>
+
+        <!-- Chatbots -->
+        <div class="svc-card">
+          <div class="svc-header">
+            <div class="svc-icon-wrap">💬</div>
+            <div class="svc-badge svc-badge-hot">🔥 Hot</div>
+          </div>
+          <h3>Chatbots</h3>
+          <p>Intelligent conversational interfaces that handle customer support, sales qualification, onboarding, and internal helpdesk — available 24/7 without breaking the bank on headcount.</p>
+          <ul class="svc-list">
+            <li>AI-powered customer support bots</li>
+            <li>Sales & lead qualification chatbots</li>
+            <li>WhatsApp, Slack & Teams integrations</li>
+            <li>Knowledge base & FAQ automation</li>
+            <li>Human handoff & escalation flows</li>
+          </ul>
+          <div class="svc-footer">
+            <span class="svc-tech">OpenAI</span>
+            <span class="svc-tech">WhatsApp API</span>
+            <span class="svc-tech">Dialogflow</span>
+            <a href="contact.html" class="btn btn-outline btn-sm">Start Project</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section class="section process-section">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-label">How We Work</span>
+        <h2 class="section-title">Our Delivery<br /><span class="text-gradient">Process</span></h2>
+      </div>
+      <div class="process-steps" data-animate="stagger">
+        <div class="process-step">
+          <div class="ps-num">01</div>
+          <h4>Discovery</h4>
+          <p>We deep-dive into your business goals, technical constraints, and user needs before writing a single line of code.</p>
+        </div>
+        <div class="process-arrow">→</div>
+        <div class="process-step">
+          <div class="ps-num">02</div>
+          <h4>Architecture</h4>
+          <p>We design a scalable technical architecture, choose the right stack, and create detailed specs and prototypes.</p>
+        </div>
+        <div class="process-arrow">→</div>
+        <div class="process-step">
+          <div class="ps-num">03</div>
+          <h4>Build</h4>
+          <p>Agile sprints with full visibility. Weekly demos, continuous deployment, and rigorous testing at every stage.</p>
+        </div>
+        <div class="process-arrow">→</div>
+        <div class="process-step">
+          <div class="ps-num">04</div>
+          <h4>Launch & Scale</h4>
+          <p>Zero-downtime deployment, post-launch monitoring, and ongoing iteration to keep your product at peak performance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta-section">
+    <div class="container">
+      <div class="cta-box" data-animate="fade-up">
+        <div class="cta-glow"></div>
+        <span class="section-label">Let's Build</span>
+        <h2>Ready to Start<br /><span class="text-gradient">Your Project?</span></h2>
+        <p>Tell us what you're building and we'll scope it, price it, and start it — fast.</p>
+        <div class="cta-actions">
+          <a href="contact.html" class="btn btn-primary btn-lg">Get a Free Quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <span class="logo-bracket">[</span>Code<span class="logo-accent">Matrix</span><span class="logo-bracket">]</span>
+          </a>
+          <p>Engineering digital excellence since 2012.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-link">𝕏</a>
+            <a href="#" class="social-link">in</a>
+            <a href="#" class="social-link">⌥</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="services.html">Web Development</a></li>
+            <li><a href="services.html">App Development</a></li>
+            <li><a href="services.html">AI & Chatbots</a></li>
+            <li><a href="services.html">Cloud Solutions</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <ul>
+            <li><a href="mailto:hello@codematrix.io">hello@codematrix.io</a></li>
+            <li><a href="tel:+11234567890">+1 (123) 456-7890</a></li>
+            <li><span>San Francisco, CA</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 CodeMatrix. All rights reserved.</p>
+        <p>Crafted with precision by the CodeMatrix team.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
